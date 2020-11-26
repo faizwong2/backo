@@ -5,6 +5,8 @@ Learn more about Backo [here](docs/about.md).
 
 Watch a video demonstration [here](https://youtu.be/c2jcrlDq5Bk).
 
+Application demo [here](https://backo.netlify.app).
+
 ## Setup
 ### Build and run project locally
 Backo smart contracts are developed using Truffle. The frontend client is using React. The following steps assume you have Node, npm/yarn, truffle and ganache-cli installed.
@@ -69,24 +71,24 @@ backo
 * `truffle-config.js`: Truffle configuration
 
 ## Checklist
-+ Be a Truffle project
-  + `truffle compile` should successfully compile contracts
-  + `truffle migrate` should successfully migrate contracts to a locally running ganache-cli test blockchain in port 8545
-  + `truffle test` should migrate contracts and run your tests
-+ Smart Contract code should be commented according to the NatSpec format
-+ Create at least 5 tests for each smart contract
-  + Write a sentence or two explaining what the tests are covering, and explain why you wrote those tests
-+ A development server to serve the frontend interface of the application
-  + App recognized current account
-  + Sign transactions using MetaMask or uPort
-  + Contract state is updated
-  + Updated reflected in UI
-+ A document called `design_pattern_decisions.md` that explains why you chose to use the design patterns that you did
-  + Implement a circuit breaker (emergency stop) pattern
-+ A document called `avoiding_common_attacks.md` that explains what measures you took to ensure that your contracts are not susceptible to common attacks
-+ Implement/use a library or an EthPM package in your project
-+ Record your screen as you demo the application, showing and explaining how you included the required components
-+ Deploy your smart contract(s) onto one of the test networks. Include a document called `deployed_addresses.txt` that describes where your contracts live (which testnet and address)
-  + Verify source code using Etherscan for the appropriate testnet
-+ Stretch requirements
-  + Integrate with an additional service (IPFS)
+- [x] Be a Truffle project
+  - [x] `truffle compile` should successfully compile contracts
+  - [x] `truffle migrate` should successfully migrate contracts to a locally running ganache-cli test blockchain in port 8545
+  - [x] `truffle test` should migrate contracts and run your tests
+- [x] Smart Contract code should be commented according to the NatSpec format
+- [x] Create at least 5 tests for each smart contract
+  - [x] Write a sentence or two explaining what the tests are covering, and explain why you wrote those tests
+- [x] A development server to serve the frontend interface of the application
+  - [x] App recognized current account
+  - [x] Sign transactions using MetaMask or uPort
+  - [x] Contract state is updated
+  - [x] Updated reflected in UI
+- [x] A document called `design_pattern_decisions.md` that explains why you chose to use the design patterns that you did
+  - [x] Implement a circuit breaker (emergency stop) pattern
+- [x] A document called `avoiding_common_attacks.md` that explains what measures you took to ensure that your contracts are not susceptible to common attacks
+- [x] Implement/use a library or an EthPM package in your project
+- [x] Record your screen as you demo the application, showing and explaining how you included the required components
+- [x] Deploy your smart contract(s) onto one of the test networks. Include a document called `deployed_addresses.txt` that describes where your contracts live (which testnet and address)
+  - [x] Verify source code using Etherscan for the appropriate testnet
+- [x] Stretch requirements
+  - [x] Integrate with an additional service (IPFS)
