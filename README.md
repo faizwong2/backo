@@ -82,7 +82,7 @@ backo
   - [x] App recognized current account
   - [x] Sign transactions using MetaMask or uPort
   - [x] Contract state is updated
-  - [x] Updated reflected in UI
+  - [x] Update reflected in UI
 - [x] A document called `design_pattern_decisions.md` that explains why you chose to use the design patterns that you did
   - [x] Implement a circuit breaker (emergency stop) pattern
 - [x] A document called `avoiding_common_attacks.md` that explains what measures you took to ensure that your contracts are not susceptible to common attacks
