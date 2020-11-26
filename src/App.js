@@ -18,6 +18,7 @@ const App = () => {
   const [web3, setWeb3] = useState(null);
   const [account, setAccount] = useState(null);
   const [network, setNetwork] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
 
@@ -29,6 +30,7 @@ const App = () => {
         setWeb3(web3);
         setAccount(accounts[0]);
         setNetwork(networkId);
+        setLoading(false);
 
         window.ethereum.on('accountsChanged', async () => {
           const accounts = await web3.eth.getAccounts();
@@ -40,7 +42,8 @@ const App = () => {
           setNetwork(networkId);
         });
       } catch (error) {
-        alert('Failed to load web3');
+        alert('Failed to load web3. Make sure MetaMask is installed.');
+        setLoading(false);
         console.error(error);
       }
     }
@@ -50,13 +53,14 @@ const App = () => {
   }, []);
 
   const connectWallet = async () => {
+    if (!web3) return;
     if (account) return;
     await window.ethereum.enable();
     const accounts = await web3.eth.getAccounts();
     setAccount(accounts[0]);
   }
 
-  if (!web3) {
+  if (loading) {
     return <Loading />
   }
 
